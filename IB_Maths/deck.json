@@ -1,0 +1,772 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "cbfb6eb9-6fde-11eb-a655-ac675d4cfacb",
+    "deck_config_uuid": "cbfb943d-6fde-11eb-af1a-ac675d4cfacb",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "cbfb943d-6fde-11eb-af1a-ac675d4cfacb",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "IB",
+            "new": {
+                "bury": true,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    1,
+                    0
+                ],
+                "order": 1,
+                "perDay": 0,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 0
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "mid": 1569369819393,
+    "name": "IB Maths",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Nimbus Sans",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [
+                "Stats",
+                "ProbabilityDistributions"
+            ],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does the Binomial distribution \\(\\operatorname{Bin}(n, p)\\) model?",
+                "The number of successes in&nbsp;\\(n\\) independent Bernoulli trials."
+            ],
+            "guid": "xWATMaXj6N",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does the discrete uniform distribution&nbsp;\\(U\\{1, \\dots, n\\}\\) model?",
+                "A situation where each one of the values&nbsp;\\(1, \\dots, n\\) is equally likely to occur"
+            ],
+            "guid": "oh#Pvl{Q8Y",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does the Poisson distribution&nbsp;\\(\\operatorname{Poi}(\\lambda)\\) model?",
+                "The number of events occurring in a given interval if these events occur with constant mean&nbsp;\\(\\lambda\\)."
+            ],
+            "guid": "AkF5292T:T",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does the negative binomial distribution&nbsp;\\(\\operatorname{NegBin}(k, p)\\) model?",
+                "If&nbsp;\\(A_1, A_2, \\dots\\) is a sequence of i.i.d. Bernoulli trials \\(A_i \\sim \\operatorname{Ber}(p)\\), then if&nbsp;\\(X \\sim \\operatorname{NegBin}(k, p)\\),&nbsp;\\(X\\) is the 'time' at which the&nbsp;\\(k\\)th success occurs.<div><br></div><div>Equivalently,<br><div>\\[X = \\min \\left\\{n \\in \\mathbb{N}\\ \\left|\\ \\sum_{i=1}^n A_i = k \\right. \\right\\}\\]<br></div></div>"
+            ],
+            "guid": "D*g@XKk[Wb",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What does the multinomial distribution&nbsp;\\(\\operatorname{Multi}(n, p_1, \\dots, p_k)\\) model?",
+                "<div>If&nbsp;\\(X \\sim \\operatorname{Multi}(n, p_1, \\dots, p_k)\\) then&nbsp;\\(X\\) is a vector of&nbsp;\\(k\\)</div><div>&nbsp;random variables.</div><div><br></div>We perform&nbsp;\\(n\\) independent trials with&nbsp;\\(k\\) possible outcomes, where in each trial the&nbsp;\\(j\\)th outcome occurs with probability&nbsp;\\(p_j\\). Then&nbsp;\\(X_j\\), the&nbsp;\\(j\\)th component of&nbsp;\\(X\\), is the number of trials which result in the&nbsp;\\(j\\)th outcome."
+            ],
+            "guid": "NiZyJf_xt8",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the discrete uniform distribution?",
+                "<div>\\(X \\sim U\\{1, \\dots, n\\}\\) has pmf given by</div><div><br></div><div>\\[f(x) = \\frac{1}{n}\\]<br></div>"
+            ],
+            "guid": "q!e%E/J-b<",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the binomial distribution?",
+                "\\(X \\sim \\operatorname{Bin}(n, p)\\)&nbsp;has pmf given by:<div><br></div><div>\\[f(x) = \\binom{n}{x}p^x(1-p)^{n-x}\\]<br></div>"
+            ],
+            "guid": "OP&]9oLC>&",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the Poisson distribution?",
+                "\\(X \\sim \\operatorname{Poi}(\\lambda)\\) has pmf:<div><br></div><div>\\[f(x) = e^{-\\lambda}\\frac{\\lambda^x}{x!}\\]<br></div>"
+            ],
+            "guid": "K+hnJks[mw",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the negative binomial distribution?",
+                "\\(X \\sim \\operatorname{NegBin}(k, p)\\)&nbsp;has pmf<div><br></div><div>\\[f(x) = \\binom{x-1}{k-1}p^k (1-p)^{x-k}\\]<br></div>"
+            ],
+            "guid": "rky7@P^#C8",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the multinomial distribution?",
+                "\\(X \\sim \\operatorname{Multi}(n, p_1, \\dots, p_k)\\) has pmf<br><div><br></div><div>\\[f(x_1, \\dots, x_k) = \\frac{n!}{x_1!\\cdots x_k!}p_1^{x_1}\\cdots p_k^{x_k}\\]<br></div>"
+            ],
+            "guid": "imNS$37$oN",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim U\\{1, \\dots, n\\}\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\frac{1}{2}(n + 1)\\]<br>"
+            ],
+            "guid": "y+%Y~_T%NC",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Bin}(n, p)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[np\\]<br>"
+            ],
+            "guid": "AN`3h&&fFg",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Poi}(\\lambda)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\lambda\\]<br>"
+            ],
+            "guid": "xr~?u6d={Y",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{NegBin}(k, p)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\frac{k}{p}\\]<br>"
+            ],
+            "guid": "Ae_aRgGx|&",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Multi}(n, p_1, \\dots, p_k)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[(np_1, \\dots, np_k)\\]<br>"
+            ],
+            "guid": "tvCMK3M19`",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim U\\{1, \\dots, n\\}\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\frac{1}{12}(n^2 - 1)\\]<br>"
+            ],
+            "guid": "b]LWezn.#V",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Bin}(n, p)\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[np(1-p)\\]<br>"
+            ],
+            "guid": "iIb~Wl1x|7",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Poi}(\\lambda)\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\lambda\\]<br>"
+            ],
+            "guid": "u#aIo~`Q^3",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{NegBin}(k, p)\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\frac{k(1-p)}{p^2}\\]<br>"
+            ],
+            "guid": "cX$`RE5`&",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Multi}(n, p_1, \\dots, p_k)\\), what is the (\\(i\\), \\(j\\) element of the) covariance matrix of \\(X\\)?",
+                "\\[\\operatorname{Cov}(X_i, X_j) = \\begin{cases} np_i (1-p_i) &amp; i=j \\\\ -np_i p_j &amp; i \\neq j\\end{cases}\\]"
+            ],
+            "guid": "N&2sN@1E`u",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the probability generating function for the discrete uniform distribution?",
+                "<div>For&nbsp;\\(X \\sim U\\{1, \\dots, n\\}\\)</div><div><br></div>\\[\\mathbb{E}\\left(z^X\\right) = \\frac{1}{n}\\sum_{i=1}^n z^i\\]<br>"
+            ],
+            "guid": "y:!|KeU-;0",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the probability generating function for the binomial distribution?",
+                "For&nbsp;\\(X \\sim \\operatorname{Bin}(n, p)\\),<div>\\[\\mathbb{E}\\left(z^X\\right) = \\left\\{pz + (1-p)\\right\\}^n\\]<br></div>"
+            ],
+            "guid": "h-Mr~o(}`}",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the probability generating function for the poisson distribution?",
+                "For&nbsp;\\(X \\sim \\operatorname{Poi}(\\lambda)\\),<div><br></div><div>\\[\\mathbb{E}(z^X) = e^{\\lambda (z-1)}\\]<br></div>"
+            ],
+            "guid": "vUI~c;vRjh",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the probability generating function for the negative binomial distribution?",
+                "If&nbsp;\\(X \\sim \\operatorname{NegBin}(k, p)\\),<div><br></div><div>\\[\\mathbb{E}(z^X) = \\frac{(pz)^k}{\\{1 - (1-p)z\\}^k}\\]<br></div>"
+            ],
+            "guid": "z2v|uLeXT4",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the joint probability generating function for the components of the multinomial distribution?",
+                "For&nbsp;\\(X \\sim \\operatorname{Multi}(n, p_1, \\dots, p_k)\\),<div><br></div><div>\\[\\mathbb{E}\\left(z_1^{X_1} \\cdots z_k^{X_k}\\right) = \\left(\\sum_{i=1}^k p_i z_i\\right)^n\\]<br></div>"
+            ],
+            "guid": "K;~W)m}W~4",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the relationship between the negative binomial and geometric distributions?",
+                "Given&nbsp;\\(X_1, \\dots, X_k \\sim \\operatorname{Geometric}(p)\\), then their sum satisfies<br><div><br></div><div>\\[\\sum_{i=1}^k X_i \\sim \\operatorname{NegBin}(k, p)\\]<br></div><div><br></div><div>so in particular, \\(\\operatorname{NegBin}(1, p) = \\operatorname{Geometric}(p)\\)</div>"
+            ],
+            "guid": "kH<{v.`1>H",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the continuous uniform distribution?",
+                "\\(X \\sim U[a, b]\\) has pdf:<div><br></div><div>\\[f(x) = \\frac{1}{b-a}\\]<br></div>"
+            ],
+            "guid": "p%y3x3h&E3",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the normal distribution?",
+                "For&nbsp;\\(X \\sim N(\\mu, \\sigma^2)\\), pdf given by<div><br></div><div>\\[f(x) = \\frac{1}{\\sqrt{2 \\pi \\sigma^2}} e^{-\\frac{1}{2 \\sigma^2} (x- \\mu)^2}\\]<br></div>"
+            ],
+            "guid": "xs^5ltK@Po",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the gamma distribution?",
+                "\\(X \\sim \\Gamma(\\alpha, \\lambda)\\) has pdf<br><div><br></div><div>\\[ f(x) = \\frac{\\lambda^\\alpha x^{\\alpha - 1} e^{-\\lambda x}}{\\Gamma (\\alpha)}&nbsp; \\]</div>"
+            ],
+            "guid": "bUvel,92xt",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the beta distribution?",
+                "\\(X \\sim \\operatorname{Beta}(a, b)\\) has pdf:<br><div><br></div><div>\\[f(x) = \\frac{\\Gamma (a + b)}{\\Gamma (a) \\Gamma (b)} x^{a - 1} (1-x)^{b-1}\\]<br></div>"
+            ],
+            "guid": "i_!_kKYrk5",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the Cauchy distribution?",
+                "\\(X \\sim \\mathrm{Cauchy}\\) has pdf:<br><div><br></div><div>\\[f(x) = \\frac{1}{\\pi (1 + x^2)}\\]<br></div>"
+            ],
+            "guid": "I`iTl,:f3_",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the pmf or pdf of the multivariate normal distribution?",
+                "\\(X \\sim N_d(\\mu, \\Sigma)\\) has pdf<br><div><br></div><div>\\[\\frac{1}{(2 \\pi)^{d/2} (\\det \\Sigma)^{1/2}} e^{-\\frac{1}{2}(x-\\mu)^\\mathsf{T}\\Sigma^{-1}(x - \\mu)}\\]<br></div>"
+            ],
+            "guid": "hCJ@Y]ycgg",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim U[a, b]\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\frac{1}{2}(a + b)\\]<br>"
+            ],
+            "guid": "vrXLe[$~Do",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim N(\\mu, \\sigma^2)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\mu\\]<br>"
+            ],
+            "guid": "BP[-,t>M-h",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\Gamma(\\alpha, \\lambda)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\frac{\\alpha}{\\lambda}\\]<br>"
+            ],
+            "guid": "xzi>+b19_?",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Beta}(a, b)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\frac{a}{a + b}\\]<br>"
+            ],
+            "guid": "b1-5ci]QcS",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\mathrm{Cauchy}\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "The expectation does not exist."
+            ],
+            "guid": "u7TC%CY)[t",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim N_d(\\mu, \\Sigma)\\), what is&nbsp;\\(\\mathbb{E}(X)\\)?",
+                "\\[\\mu\\]<br>"
+            ],
+            "guid": "Lds<3l4VXO",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim U[a, b]\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\frac{1}{12}(b - a)^2\\]<br>"
+            ],
+            "guid": "t};<~N=U#{",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim N(\\mu, \\sigma^2)\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\sigma^2\\]<br>"
+            ],
+            "guid": "q+j!k*_2?<",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\Gamma(\\alpha, \\lambda)\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\frac{\\alpha}{\\lambda^2}\\]<br>"
+            ],
+            "guid": "L=BBuDqBYq",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\operatorname{Beta}(a, b)\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\frac{ab}{(a + b)^2 (a + b + 1)}\\]<br>"
+            ],
+            "guid": "A:8c#H2<gQ",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim \\mathrm{Cauchy}\\), what is&nbsp;\\(\\operatorname{Var}(X)\\)?",
+                "\\[\\infty\\]<br>"
+            ],
+            "guid": "u0jYT*ir]l",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "If&nbsp;\\(X \\sim N_d(\\mu, \\Sigma)\\), what is its covariance matrix?",
+                "\\[\\operatorname{Cov}(X_i, X_j) = \\Sigma_{ij}\\]<br>"
+            ],
+            "guid": "Oo1:(QUG3>",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the moment generating function for the continuous uniform distribution?",
+                "\\[\\mathbb{E}(e^{tX}) = \\frac{e^{bt} - e^{at}}{t(b - a)}\\]<br>"
+            ],
+            "guid": "=CdZtN/IF",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the moment generating function for the normal distribution?",
+                "<div>For&nbsp;\\(X \\sim N(\\mu, \\sigma^2)\\)</div><div><br></div>\\[\\mathbb{E}(e^{tX}) = e^{t\\mu + \\sigma^2 t^2 / 2}"
+            ],
+            "guid": "rc9#l7g@:E",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the moment generating function for the gamma distribution?",
+                "For \\(X \\sim \\Gamma(a, b)\\) the mgf is<br><div><br></div><div>\\[\\mathbb{E}(e^{tX}) = \\begin{cases}\\left(\\frac{\\lambda}{\\lambda - t}\\right)^\\alpha &amp; \\text{if}\\ t &lt; \\lambda \\\\ \\infty &amp; \\text{if}\\ t \\geq \\lambda \\end{cases}\\]<br></div>"
+            ],
+            "guid": "m#1v#HO5Zj",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the moment generating function for the cauchy distribution?",
+                "Given&nbsp;\\(X \\sim \\mathrm{Cauchy}\\),<div><br></div><div>\\[\\mathbb{E}\\left(e^{tX}\\right) = \\begin{cases}1&amp;\\text{if}\\ t=0\\\\ \\infty&amp;\\text{if}\\ t \\neq 0\\end{cases}\\]<br></div>"
+            ],
+            "guid": "n}RAnr]pbF",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the moment generating function for the multivariate normal distribution?",
+                "For&nbsp;\\(X \\sim N_d(\\mu, \\Sigma)\\),<div><br></div><div>\\[\\mathbb{E}(e^{t^{\\mathsf{T}}X}) = e^{t^{\\mathsf{T}}\\mu + t^{\\mathsf{T}} \\Sigma t/2}\\]<br></div>"
+            ],
+            "guid": "c{OJY``)r6",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "What is the relationship between the gamma distribution and the exponential distribution?",
+                "If&nbsp;\\(X_1, \\dots, X_n \\sim \\operatorname{Exp}(\\lambda)\\) then their sum satisfies<div>\\[\\sum_{i=1}^n X_i \\sim \\Gamma(n, \\lambda)\\]<br></div><div><br></div><div>In particular,&nbsp;\\(\\operatorname{Exp}(\\lambda) = \\Gamma(1, \\lambda)\\).</div>"
+            ],
+            "guid": "PWNvD|=-QG",
+            "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
+            "tags": [
+                "ProbabilityDistributions",
+                "Stats"
+            ]
+        }
+    ]
+}
