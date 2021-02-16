@@ -720,7 +720,7 @@
             "__type__": "Note",
             "fields": [
                 "What is the moment generating function for the gamma distribution?",
-                "For \\(X \\sim \\Gamma(a, b)\\) the mgf is<br><div><br></div><div>\\[\\mathbb{E}(e^{tX}) = \\begin{cases}\\left(\\frac{\\lambda}{\\lambda - t}\\right)^\\alpha &amp; \\text{if}\\ t &lt; \\lambda \\\\ \\infty &amp; \\text{if}\\ t \\geq \\lambda \\end{cases}\\]<br></div>"
+                "For \\(X \\sim \\Gamma(\\alpha, \\lambda)\\) the mgf is<br><div><br></div><div>\\[\\mathbb{E}(e^{tX}) = \\begin{cases}\\left(\\frac{\\lambda}{\\lambda - t}\\right)^\\alpha &amp; \\text{if}\\ t &lt; \\lambda \\\\ \\infty &amp; \\text{if}\\ t \\geq \\lambda \\end{cases}\\]<br></div>"
             ],
             "guid": "m#1v#HO5Zj",
             "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
