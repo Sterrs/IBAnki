@@ -32,8 +32,8 @@
                     1,
                     0
                 ],
-                "order": 1,
-                "perDay": 0,
+                "order": 0,
+                "perDay": 50,
                 "separate": true
             },
             "replayq": true,
@@ -45,7 +45,7 @@
                 "ivlFct": 1.0,
                 "maxIvl": 36500,
                 "minSpace": 1,
-                "perDay": 0
+                "perDay": 250
             },
             "timer": 0
         }
@@ -707,7 +707,7 @@
             "__type__": "Note",
             "fields": [
                 "What is the moment generating function for the normal distribution?",
-                "<div>For&nbsp;\\(X \\sim N(\\mu, \\sigma^2)\\)</div><div><br></div>\\[\\mathbb{E}(e^{tX}) = e^{t\\mu + \\sigma^2 t^2 / 2}"
+                "<div>For&nbsp;\\(X \\sim N(\\mu, \\sigma^2)\\)</div><div><br></div>\\[\\mathbb{E}(e^{tX}) = e^{t\\mu + \\sigma^2 t^2 / 2}\\]"
             ],
             "guid": "rc9#l7g@:E",
             "note_model_uuid": "cbfbe3a6-6fde-11eb-a43e-ac675d4cfacb",
